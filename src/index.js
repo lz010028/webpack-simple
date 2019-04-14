@@ -8,6 +8,7 @@ import './styles/font.scss'
 import './styles/index.css'
 import counter from './js/counter'
 import number from './js/number'
+import "@babel/polyfill"
 
 function component() {
   let element = document.createElement('div');

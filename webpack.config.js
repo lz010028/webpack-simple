@@ -76,6 +76,16 @@ module.exports = {
                     options: {}
                 }
             },
+            {
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "babel-loader",
+                options: {
+                    "presets": ["@babel/preset-env", {
+                        useBuiltIns: "usage" // 更具业务代码添加兼容代码
+                    }]
+                }
+            }, /* ES6 支持 */
         ]
     },
     plugins: [
