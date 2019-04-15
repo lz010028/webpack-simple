@@ -1,4 +1,15 @@
 {
+  "presets": [['@babel/preset-env', {
+    "target": {
+      "chreome": '67'
+    },
+    "useBuiltIns": 'usage'
+  }]]
+}
+
+
+/*
+{
   "plugins": [["@babel/plugin-transform-runtime", {
     "corejs": 2,
     "helper": true,
@@ -6,3 +17,4 @@
     "useESModules": false
   }]]
 }
+*/
